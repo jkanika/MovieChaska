@@ -1,0 +1,39 @@
+<h4>Edit - Movie</h4>
+<div class="well well-lg">
+            <label for="movId"> Movie ID </label> <br>
+            <input type="text" [placeholder]="id" [value] ="id" disabled>
+
+    <form [formGroup]="editForm" class="form-horizontal" (ngSubmit)="submitForm(editForm)" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label for="movName"> Movie Name </label>
+                <input type="text" class="form-control" formControlName="movName" name="movName"
+                 id="movName" placeholder="Enter Product mname" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label for="movDesc"> Movie Descriptipn </label>
+                <input type="text"  class="form-control" formControlName="movDesc" name="movDesc" 
+                id="movDesc" placeholder="Enter Product Description" >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label for="movRel">Release Date</label>
+                <input type="text" class="form-control" formControlName="movRel" name="movRel" id="movRel" 
+                    placeholder="Release Date" >
+              </div>
+        </div>
+        <div class="form-row">
+
+            <div class="form-group col-md">
+                <label for="movPrice">Movie Price</label>
+                <input type="text" class="form-control" formControlName="movPrice" name="movPrice" id="movPrice" 
+                    placeholder="Price" >
+              </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" >Submit</button>
+      </form>
+
+</div>

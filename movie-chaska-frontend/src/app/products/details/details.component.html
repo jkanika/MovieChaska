@@ -1,0 +1,18 @@
+
+<div >
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body" >
+      <h5 class="card-title">{{product.movName}}</h5>
+      <p class="card-text">{{product.movDesc}}</p>
+      <p class="card-text">{{product.movPrice}}</p>
+    </div>
+    <p>
+      <button (click)="increaseCount($event)"> Number Of People</button> &nbsp;
+      <input type="text" [placeholder] = "count" disabled size="1"> <br> 
+    </p>
+    <p>
+      <button (click)="totalAmount($event)"> Show Total</button> &nbsp;
+      <input type="text" [placeholder] = "total" disabled size="1"> <br> 
+    </p>
+    <button (click)="payment(total)" class="btn btn-primary"> Book Tickets Now</button>
+  </div>

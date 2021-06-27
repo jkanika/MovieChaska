@@ -1,0 +1,25 @@
+<h4>Movies list </h4>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Release Date</th>
+      <th scope="col">Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <th scope="row">{{p.id}}</th>
+      <td>{{p.movName}}</td>
+      <td>{{p.movDesc}}</td>
+      <td>{{p.movRel}}</td>
+      <td>{{p.movPrice}}</td>
+      <td>
+          <button (click)="book(p.id)">Book Tickets</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
