@@ -33,7 +33,7 @@ export class PaymentComponent implements OnInit {
       });
 
     this.paymentForm = this.formBuilder.group({
-      cvv : ['',Validators.required],
+      cvv : ['',[Validators.required, Validators.minLength(3), Validators.maxLength(3)]],
       cardno :['',[Validators.required, Validators.minLength(16), Validators.maxLength(16)]],
       cardex: ['',Validators.required]
     });

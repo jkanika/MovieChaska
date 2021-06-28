@@ -1,11 +1,11 @@
-<h4>Create - Product</h4>
+<h4>Create - Movie</h4>
 <div class="well well-lg">
     <form [formGroup]="movieForm" class="form-horizontal" (ngSubmit)="submitForm(movieForm)" novalidate>
         <div class="form-row">
             <div class="form-group col-md">
                 <label for="movName"> Movie Name </label>
                 <input type="text" class="form-control" formControlName="movName" name="movName"
-                 id="movName" placeholder="Enter Product mname" >
+                 id="movName" placeholder="Enter Movie Name" >
                 <small *ngIf="hasError('movName')" [ngClass]="{'has-error' : hasError('movName') }" >
                     <span *ngIf="movName.errors.required"> Movie name is a required field .</span>
                 </small>
@@ -15,7 +15,7 @@
             <div class="form-group col-md">
                 <label for="movDesc"> Movie Descriptipn </label>
                 <input type="text"  class="form-control" formControlName="movDesc" name="movDesc" 
-                id="movDesc" placeholder="Enter Product Description" >
+                id="movDesc" placeholder="Enter Movie Description" >
                 <small *ngIf="hasError('movDesc')" [ngClass]="{'has-error' : hasError('movDesc') }" >
                     <span *ngIf="movDesc.errors.required"> Description is a required field .</span>
                 </small>
@@ -28,7 +28,7 @@
                 <input type="text" class="form-control" formControlName="movRel" name="movRel" id="movRel" 
                     placeholder="Release Date" >
                 <small *ngIf="hasError('movRel')" [ngClass]="{'has-error' : hasError('movRel') }" >
-                    <span *ngIf="movRel.errors.required"> price is a required field .</span>
+                    <span *ngIf="movRel.errors.required"> Release date is a required field .</span>
                 </small>
               </div>
         </div>
@@ -39,7 +39,7 @@
                 <input type="text" class="form-control" formControlName="movPrice" name="movPrice" id="movPrice" 
                     placeholder="Price" >
                 <small *ngIf="hasError('movPrice')" [ngClass]="{'has-error' : hasError('price') }" >
-                    <span *ngIf="movPrice.errors.required"> price is a required field .</span>
+                    <span *ngIf="movPrice.errors.required"> Price is a required field .</span>
                 </small>
               </div>
         </div>

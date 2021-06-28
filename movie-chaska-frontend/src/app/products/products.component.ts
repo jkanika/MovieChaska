@@ -34,8 +34,8 @@ export class ProductsComponent implements OnInit {
     this.router.navigateByUrl('/products/details/'+id);
   }
 
-  delete(id){
-    if(confirm("Are you sure you want to delete"+id)){
+  delete(id,name){
+    if(confirm("Are you sure you want to delete movie : "+name)){
       this.apiService.deleteProduct(id).subscribe(res =>{
         this.getAllProducts();
     });

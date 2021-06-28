@@ -36,7 +36,7 @@
                 <input type="email"  class="form-control" formControlName="email" name="email" 
                 id="email" placeholder="Enter your email" >
                 <small *ngIf="hasError('email')" [ngClass]="{'has-error' : hasError('email') }" >
-                    <span *ngIf="email.errors.required"> Description is a required field .</span>
+                    <span *ngIf="email.errors.required"> Email is a required field .</span>
                 </small>
             </div>
 

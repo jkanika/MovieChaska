@@ -1,4 +1,4 @@
-<h4>Products list </h4>
+<h4>Movies </h4>
 <button style="float:right"  (click)="create()">create</button>
 <table class="table">
   <thead class="thead-dark">
@@ -19,7 +19,7 @@
       <td>{{p.movRel}}</td>
       <td>{{p.movPrice}}</td>
       <td>
-          <button (click)="delete(p.id)">delete</button>
+          <button (click)="delete(p.id, p.movName)">delete</button>
           <button (click)="edit(p.id)">edit</button>
       </td>
     </tr>

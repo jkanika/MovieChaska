@@ -38,6 +38,7 @@ export class CreateComponent implements OnInit {
       this.submitted  = true;
       //console.log("Submitted");
       // if product is valid 
+      alert("Product Created..!")
       this.apiService.createProduct(this.movieForm.value).subscribe(res=>{
         this.router.navigateByUrl('/products');
     });
